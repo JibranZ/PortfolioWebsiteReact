@@ -1,0 +1,30 @@
+.video-container {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.other-components {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.video-container.hide {
+  opacity: 0;
+}
+
+.other-components.show {
+  opacity: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.content h1 {
+  font-size: 80px;
+  font-weight: 600;
+}
+.content h3 {
+  font-size: 40px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}

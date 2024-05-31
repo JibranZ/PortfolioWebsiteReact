@@ -1,0 +1,92 @@
+.mywork {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 80px 170px;
+}
+.mywork-title {
+  position: relative;
+}
+.mywork-title h1 {
+  padding: 0px 30px;
+  font-size: 80px;
+  font-weight: 600;
+}
+.mywork-title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+.mywork-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+.mywork-container img {
+  box-sizing: border-box;
+  /* width: 419px; */
+  height: 280px;
+  transform: 0.3s;
+}
+.mywork-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-bottom: 100px;
+}
+.mywork-link {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+.mywork-details h3 {
+  text-align: center;
+  font-size: 40px;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mywork-link:hover {
+  background-color: #c850c0;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.05);
+  transform: translateY(-5px);
+  transition: 0.4s;
+}
+@media (max-width: 768px) {
+  .mywork {
+    margin: 80px 20px; /* Adjust margin for smaller screens */
+  }
+
+  .mywork-title h1 {
+    font-size: 50px; /* Decrease font size for smaller screens */
+  }
+
+  .mywork-container {
+    grid-template-columns: 1fr; /* Change to single column layout for smaller screens */
+    gap: 20px; /* Decrease gap between items for smaller screens */
+  }
+
+  .mywork-container img {
+    height: auto; /* Allow images to resize based on container width */
+    max-width: 100%; /* Ensure images don't exceed container width */
+  }
+
+  .mywork-details h3 {
+    font-size: 30px; /* Decrease font size for smaller screens */
+  }
+}

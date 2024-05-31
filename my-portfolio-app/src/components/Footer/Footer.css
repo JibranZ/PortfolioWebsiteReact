@@ -1,0 +1,19 @@
+.footer {
+  margin: 50px 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer-bottom-left {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .footer-bottom-left {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+}

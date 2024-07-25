@@ -1,1 +1,1 @@
-# New Version of my portfolio website made in React
+# New Version of my portfolio website made in react
